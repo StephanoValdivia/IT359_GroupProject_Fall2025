@@ -33,7 +33,7 @@ SETUP INSTRUCTIONS
   - anonymous_enable=NO
 - sudo systemctl restart vsftpd
 
-3 Update Kali and install pynput
+3 Update Kali and install pynput on Kali
 - sudo apt update
 - sudo apt install python3-pynput
 
