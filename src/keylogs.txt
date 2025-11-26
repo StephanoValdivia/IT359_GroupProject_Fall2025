@@ -1,0 +1,1 @@
+# This file will be used as the log file. You may delete this comment when you are ready to use the keylogger.
