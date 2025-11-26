@@ -4,11 +4,11 @@ Demo Video Link: https://youtu.be/XNx03tu2RUQ
 
 OVERVIEW
 
-The Keylogger Project is a small attack simulation tool that shows how an attacker can capture and steal user input from a compromised machine. It uses a Python script that records keystrokes on a Kali Linux virtual machine and then sends the log file to an Ubuntu server over FTP. This tool was created for our final project, where the goal was to build a working penetration testing tool and walk through the entire process from setup to demonstration.
+The Keylogger Project is a small attack simulation tool that shows how an attacker can capture and steal user input from a compromised machine. It uses a Python script that records system-wide keystrokes, writes them into a readable text file, and exfiltrates that file to an Ubuntu VM over FTP. This tool was created for our final project, where the goal was to build a working penetration testing tool and walk through the entire process from setup to demonstration.
 
 PURPOSE
 
-The purpose of this tool is to help explain how attackers collect sensitive information without a user noticing anything. We wanted to keep the design simple so the behavior of the keylogger is easy to understand. The script records system-wide keystrokes, writes them into a readable text file, and exfiltrates that file to an attacker-controlled server. By building each part ourselves, we gained hands-on experience with how basic keyloggers work and insight into how a small script like this can cause great damage.
+The purpose of this tool is to help explain how attackers collect sensitive information without a user noticing anything. We wanted to keep the design simple so the behavior of the keylogger is easy to understand. By building each part ourselves, we gained hands-on experience with how basic keyloggers work and insight into how a small script like this can cause great damage.
 
 REQUIRED DEPENDENCIES AND LIBRARIES
 
