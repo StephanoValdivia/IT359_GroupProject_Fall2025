@@ -1,1 +1,24 @@
+# Ignore Python virtual environments
+venv/
+.env/
+.venv/
+
+# Ignore compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore keylogger logs and generated output
+keylogs.txt
+logs/
+*.log
+
+# Ignore temporary or swap files
+*.swp
+*.swo
+*.tmp
+*~
+
+# Ignore OS-generated artifacts
+.DS_Store   
+Thumbs.db   
 
